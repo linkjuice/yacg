@@ -1,0 +1,12 @@
+Options -Indexes -Multiviews
+RewriteEngine On
+#RewriteBase /   #uncomment this line if you're getting 500 errors on every page except index
+
+#if your YACG is installed in a subfolder and you're experiencing any problems, uncomment next line and line #10 and replace 'subfolder' with the name of your folder
+#RewriteBase /subfolder/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+#RewriteRule . /subfolder/index.php [L]
+RewriteCond %{REQUEST_FILENAME} config.inc.php
+RewriteRule . index.php [L]

@@ -1,0 +1,13 @@
+.DS_Store
+feed.xml
+sitemap.xml
+keywords.txt
+keywords.tmp.txt
+keywords.tr.txt
+categories.tr.txt
+config.inc.php
+categories.txt
+ips.txt
+keywords.bkp
+cache/
+img/*
